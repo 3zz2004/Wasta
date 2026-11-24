@@ -7,7 +7,7 @@
 
 <br>
 
-[![CI](https://github.com/3zz2004/wasta/actions/workflows/ci.yml/badge.svg)](https://github.com/3zz2004/wasta/actions/workflows/ci.yml)
+[![CI](https://github.com/3zz2004/Wasta/actions/workflows/ci.yml/badge.svg)](https://github.com/3zz2004/Wasta/actions/workflows/ci.yml)
 [![npm](https://img.shields.io/npm/v/wasta?color=E8B04B&labelColor=18181B)](https://www.npmjs.com/package/wasta)
 [![PyPI](https://img.shields.io/pypi/v/wasta?color=E8B04B&labelColor=18181B)](https://pypi.org/project/wasta/)
 [![Zero dependencies](https://img.shields.io/badge/dependencies-0-E8B04B?labelColor=18181B)](js/package.json)

@@ -1,0 +1,3 @@
+- [ ] Added or updated cases in `spec/`
+- [ ] Changed both `js/` and `python/`
+- [ ] Ran `node scripts/sync-data.mjs` if `data/` changed
