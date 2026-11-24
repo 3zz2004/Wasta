@@ -41,7 +41,7 @@ pytest
 1. Bump the version in `js/package.json`, `python/pyproject.toml` and `python/src/wasta/__init__.py`, and add an entry to `CHANGELOG.md`.
 2. Tag and push: `git tag v0.2.0 && git push --tags`.
 
-The release workflow publishes to npm with provenance (needs an `NPM_TOKEN` repository secret) and to PyPI through trusted publishing (add this repo as a trusted publisher on PyPI, environment `pypi`).
+The release workflow publishes to npm and PyPI through trusted publishing: both registries are set up to accept releases from `.github/workflows/release.yml` in this repository, so no tokens are stored anywhere. A version that is already published is skipped.
 
 ## Ground rules
 
