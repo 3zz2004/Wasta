@@ -166,14 +166,13 @@ def build(theme: str) -> str:
         )
     )
 
-    y_cmd = 548
-    cmd = [("$ ", th["accent"]), ("npm i wasta", th["text"])]
-    x = x0
-    for txt, color in cmd + [("     ", th["muted"]), ("$ ", th["accent"]), ("pip install wasta", th["text"])]:
-        body.append(text_line(book, color, [Run(txt, MONO)], x, y_cmd, 21))
-        x += MONO.width(txt, 21)
+    y_cmd = 512
+    for i, command in enumerate(("npm i @3zz2004/wasta", "pip install wasta")):
+        y = y_cmd + i * 32
+        body.append(text_line(book, th["accent"], [Run("$ ", MONO)], x0, y, 21))
+        body.append(text_line(book, th["text"], [Run(command, MONO)], x0 + MONO.width("$ ", 21), y, 21))
     body.append(
-        text_line(book, th["muted"], [Run("JavaScript & Python · zero dependencies", SANS_R)], x0, y_cmd + 36, 17)
+        text_line(book, th["muted"], [Run("JavaScript & Python · zero dependencies", SANS_R)], x0, y_cmd + 76, 17)
     )
 
     # Card.

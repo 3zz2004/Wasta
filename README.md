@@ -8,7 +8,7 @@
 <br>
 
 [![CI](https://github.com/3zz2004/Wasta/actions/workflows/ci.yml/badge.svg)](https://github.com/3zz2004/Wasta/actions/workflows/ci.yml)
-[![npm](https://img.shields.io/npm/v/wasta?color=E8B04B&labelColor=18181B)](https://www.npmjs.com/package/wasta)
+[![npm](https://img.shields.io/npm/v/@3zz2004/wasta?color=E8B04B&labelColor=18181B)](https://www.npmjs.com/package/@3zz2004/wasta)
 [![PyPI](https://img.shields.io/pypi/v/wasta?color=E8B04B&labelColor=18181B)](https://pypi.org/project/wasta/)
 [![Zero dependencies](https://img.shields.io/badge/dependencies-0-E8B04B?labelColor=18181B)](js/package.json)
 [![License: MIT](https://img.shields.io/badge/license-MIT-E8B04B?labelColor=18181B)](LICENSE)
@@ -23,8 +23,12 @@ The small, fiddly things every Egyptian codebase ends up rewriting, done once an
 ## Install
 
 ```bash
-npm install wasta
-pip install wasta
+npm install @3zz2004/wasta
+```
+
+```bash
+# Python: on PyPI soon. Until then, straight from GitHub:
+pip install "wasta @ git+https://github.com/3zz2004/Wasta.git#subdirectory=python"
 ```
 
 JavaScript and Python, with the same behaviour in both. Zero dependencies. Everything runs on your machine: nothing is sent anywhere and nothing is stored.
@@ -52,7 +56,7 @@ JavaScript and Python, with the same behaviour in both. Zero dependencies. Every
 Accepts the way people actually type numbers: with or without `+20` / `0020`, with spaces, dashes or brackets, in Arabic-Indic digits, and with the invisible direction marks that come along when you copy from Arabic text.
 
 ```ts
-import { parsePhone } from "wasta";
+import { parsePhone } from "@3zz2004/wasta";
 
 parsePhone("+20 100 123 4567");
 // { ok: true, value: { national: "01001234567", e164: "+201001234567", prefix: "010", operator: "vodafone" } }
@@ -82,7 +86,7 @@ Error codes: `EMPTY` · `INVALID_CHARACTERS` · `NOT_EGYPTIAN` · `NOT_MOBILE` �
 Reads what's encoded in the 14 digits: birth date, governorate and gender.
 
 ```ts
-import { parseNationalId } from "wasta";
+import { parseNationalId } from "@3zz2004/wasta";
 
 const result = parseNationalId("29905211201538");
 if (result.ok) {
@@ -111,7 +115,7 @@ People born outside Egypt have governorate code `88`: `bornAbroad` is `true` and
 Amounts in words, the way they're written on invoices and cheques.
 
 ```ts
-import { tafqeet, numberToArabicWords } from "wasta";
+import { tafqeet, numberToArabicWords } from "@3zz2004/wasta";
 
 tafqeet(1500.25);   // "فقط ألف وخمسمائة جنيه وخمسة وعشرون قرشًا لا غير"
 tafqeet("١٬٥٠٠");    // "فقط ألف وخمسمائة جنيه لا غير"
@@ -147,7 +151,7 @@ Amounts with more than two decimal places throw `TOO_MANY_DECIMALS` instead of b
 All 27, with the two-digit codes used in national IDs, Arabic and English names, and a lookup that forgives the way people really spell them.
 
 ```ts
-import { findGovernorate, governorates } from "wasta";
+import { findGovernorate, governorates } from "@3zz2004/wasta";
 
 findGovernorate("كفرالشيخ")?.code;          // "15"
 findGovernorate("محافظة كفر الشيخ")?.code;  // "15"
@@ -162,7 +166,7 @@ governorates.map((g) => ({ value: g.slug, label: g.nameAr })); // ready for a <s
 For search and matching, so "أحمد" finds "احمد" and "مدرسة" finds "مدرسه".
 
 ```ts
-import { normalizeArabic } from "wasta";
+import { normalizeArabic } from "@3zz2004/wasta";
 
 normalizeArabic("إِنَّ المَدرسـةَ  كبيرة"); // "ان المدرسه كبيره"
 normalizeArabic("مدرسة", { taMarbuta: false }); // "مدرسة"

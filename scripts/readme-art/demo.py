@@ -45,7 +45,7 @@ JS = [
             (" = ", "dim"),
             ("require", "fn"),
             ("(", "dim"),
-            ('"wasta"', "string"),
+            ('"@3zz2004/wasta"', "string"),
             (")", "dim"),
         ],
     ),
