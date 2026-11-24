@@ -1,0 +1,26 @@
+node_modules/
+dist/
+*.tgz
+coverage/
+
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+
+# Copied from the repo root before publishing
+js/README.md
+js/LICENSE
+python/README.md
+python/LICENSE
+
+.DS_Store
+.vscode/
+.idea/
+
+# Fonts for the README art (downloaded by scripts/readme-art/fetch-fonts.sh)
+scripts/readme-art/fonts/

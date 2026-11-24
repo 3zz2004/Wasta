@@ -1,0 +1,108 @@
+{
+  "today": "2026-11-24",
+  "valid": [
+    {
+      "input": "29905211201538",
+      "birthDate": "1999-05-21",
+      "governorateCode": "12",
+      "bornAbroad": false,
+      "gender": "male"
+    },
+    {
+      "input": "30103150200264",
+      "birthDate": "2001-03-15",
+      "governorateCode": "02",
+      "bornAbroad": false,
+      "gender": "female"
+    },
+    {
+      "input": "29001018800011",
+      "birthDate": "1990-01-01",
+      "governorateCode": "88",
+      "bornAbroad": true,
+      "gender": "male"
+    },
+    {
+      "input": "30002291201532",
+      "birthDate": "2000-02-29",
+      "governorateCode": "12",
+      "bornAbroad": false,
+      "gender": "male"
+    },
+    {
+      "input": "32611241500128",
+      "birthDate": "2026-11-24",
+      "governorateCode": "15",
+      "bornAbroad": false,
+      "gender": "female"
+    },
+    {
+      "input": "٢٩٩٠٥٢١١٢٠١٥٣٨",
+      "birthDate": "1999-05-21",
+      "governorateCode": "12",
+      "bornAbroad": false,
+      "gender": "male"
+    },
+    {
+      "input": "2 990521 12 0153 8",
+      "birthDate": "1999-05-21",
+      "governorateCode": "12",
+      "bornAbroad": false,
+      "gender": "male"
+    }
+  ],
+  "invalid": [
+    {
+      "input": "",
+      "error": "INVALID_FORMAT"
+    },
+    {
+      "input": "2990521120153",
+      "error": "INVALID_FORMAT"
+    },
+    {
+      "input": "299052112015381",
+      "error": "INVALID_FORMAT"
+    },
+    {
+      "input": "2990521120153x",
+      "error": "INVALID_FORMAT"
+    },
+    {
+      "input": "19905211201538",
+      "error": "INVALID_CENTURY"
+    },
+    {
+      "input": "49905211201538",
+      "error": "INVALID_CENTURY"
+    },
+    {
+      "input": "29902301201538",
+      "error": "INVALID_BIRTH_DATE"
+    },
+    {
+      "input": "29913011201538",
+      "error": "INVALID_BIRTH_DATE"
+    },
+    {
+      "input": "29900011201538",
+      "error": "INVALID_BIRTH_DATE"
+    },
+    {
+      "input": "29902291201538",
+      "error": "INVALID_BIRTH_DATE"
+    },
+    {
+      "input": "32611251201538",
+      "error": "FUTURE_BIRTH_DATE"
+    },
+    {
+      "input": "29905215001538",
+      "error": "UNKNOWN_GOVERNORATE"
+    },
+    {
+      "input": "29905210001538",
+      "error": "UNKNOWN_GOVERNORATE"
+    }
+  ]
+}

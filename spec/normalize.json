@@ -1,0 +1,143 @@
+{
+  "default": [
+    {
+      "input": "أحمد",
+      "output": "احمد"
+    },
+    {
+      "input": "إسلام",
+      "output": "اسلام"
+    },
+    {
+      "input": "آمال",
+      "output": "امال"
+    },
+    {
+      "input": "ٱلرحمن",
+      "output": "الرحمن"
+    },
+    {
+      "input": "مصطفى",
+      "output": "مصطفي"
+    },
+    {
+      "input": "مدرسة",
+      "output": "مدرسه"
+    },
+    {
+      "input": "مُحَمَّدٌ",
+      "output": "محمد"
+    },
+    {
+      "input": "جميـــــل",
+      "output": "جميل"
+    },
+    {
+      "input": "رقم ١٢٣ و ۴۵۶",
+      "output": "رقم 123 و 456"
+    },
+    {
+      "input": "  كلام   كتير\n\tومسافات  ",
+      "output": "كلام كتير ومسافات"
+    },
+    {
+      "input": "\u200fمرحبا\u200e",
+      "output": "مرحبا"
+    },
+    {
+      "input": "سؤال وشاطئ",
+      "output": "سؤال وشاطئ"
+    },
+    {
+      "input": "Hello World",
+      "output": "Hello World"
+    },
+    {
+      "input": "\ufeffمرحبا\u0085\u3000عالم\u2028",
+      "output": "مرحبا عالم"
+    },
+    {
+      "input": "a\u001fb",
+      "output": "a\u001fb"
+    },
+    {
+      "input": "إِسْلَامٌ ومَدرسـة",
+      "output": "اسلام ومدرسه"
+    }
+  ],
+  "options": [
+    {
+      "input": "مدرسة",
+      "options": {
+        "taMarbuta": false
+      },
+      "output": "مدرسة"
+    },
+    {
+      "input": "أحمد",
+      "options": {
+        "alef": false
+      },
+      "output": "أحمد"
+    },
+    {
+      "input": "مصطفى",
+      "options": {
+        "alefMaqsura": false
+      },
+      "output": "مصطفى"
+    },
+    {
+      "input": "مُحَمَّد",
+      "options": {
+        "diacritics": false
+      },
+      "output": "مُحَمَّد"
+    },
+    {
+      "input": "سؤال وشاطئ",
+      "options": {
+        "hamza": true
+      },
+      "output": "سوال وشاطي"
+    },
+    {
+      "input": "رقم ١٢٣",
+      "options": {
+        "digits": false
+      },
+      "output": "رقم ١٢٣"
+    },
+    {
+      "input": "  a   b  ",
+      "options": {
+        "whitespace": false
+      },
+      "output": "  a   b  "
+    }
+  ],
+  "toWesternDigits": [
+    {
+      "input": "٠١٢٣٤٥٦٧٨٩",
+      "output": "0123456789"
+    },
+    {
+      "input": "۰۱۲۳۴۵۶۷۸۹",
+      "output": "0123456789"
+    },
+    {
+      "input": "abc 12",
+      "output": "abc 12"
+    }
+  ],
+  "toArabicDigits": [
+    {
+      "input": "0123456789",
+      "output": "٠١٢٣٤٥٦٧٨٩"
+    },
+    {
+      "input": "سعر 150 جنيه",
+      "output": "سعر ١٥٠ جنيه"
+    }
+  ]
+}

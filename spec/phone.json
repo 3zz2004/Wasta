@@ -1,0 +1,164 @@
+{
+  "valid": [
+    {
+      "input": "01001234567",
+      "national": "01001234567",
+      "e164": "+201001234567",
+      "operator": "vodafone"
+    },
+    {
+      "input": "01112345678",
+      "national": "01112345678",
+      "e164": "+201112345678",
+      "operator": "etisalat"
+    },
+    {
+      "input": "01298765432",
+      "national": "01298765432",
+      "e164": "+201298765432",
+      "operator": "orange"
+    },
+    {
+      "input": "01555555555",
+      "national": "01555555555",
+      "e164": "+201555555555",
+      "operator": "we"
+    },
+    {
+      "input": "+201001234567",
+      "national": "01001234567",
+      "e164": "+201001234567",
+      "operator": "vodafone"
+    },
+    {
+      "input": "00201001234567",
+      "national": "01001234567",
+      "e164": "+201001234567",
+      "operator": "vodafone"
+    },
+    {
+      "input": "201001234567",
+      "national": "01001234567",
+      "e164": "+201001234567",
+      "operator": "vodafone"
+    },
+    {
+      "input": "1001234567",
+      "national": "01001234567",
+      "e164": "+201001234567",
+      "operator": "vodafone"
+    },
+    {
+      "input": "+20 100 123 4567",
+      "national": "01001234567",
+      "e164": "+201001234567",
+      "operator": "vodafone"
+    },
+    {
+      "input": "010-0123-4567",
+      "national": "01001234567",
+      "e164": "+201001234567",
+      "operator": "vodafone"
+    },
+    {
+      "input": "(010) 0123.4567",
+      "national": "01001234567",
+      "e164": "+201001234567",
+      "operator": "vodafone"
+    },
+    {
+      "input": "٠١٠٠١٢٣٤٥٦٧",
+      "national": "01001234567",
+      "e164": "+201001234567",
+      "operator": "vodafone"
+    },
+    {
+      "input": "۰۱۲۹۸۷۶۵۴۳۲",
+      "national": "01298765432",
+      "e164": "+201298765432",
+      "operator": "orange"
+    },
+    {
+      "input": "\u200f01001234567\u200e",
+      "national": "01001234567",
+      "e164": "+201001234567",
+      "operator": "vodafone"
+    },
+    {
+      "input": "  +20\u00a0155 555 5555  ",
+      "national": "01555555555",
+      "e164": "+201555555555",
+      "operator": "we"
+    },
+    {
+      "input": "\ufeff01001234567\u2028",
+      "national": "01001234567",
+      "e164": "+201001234567",
+      "operator": "vodafone"
+    },
+    {
+      "input": "٠١٠ ٠١٢٣ ٤٥٦٧",
+      "national": "01001234567",
+      "e164": "+201001234567",
+      "operator": "vodafone"
+    }
+  ],
+  "invalid": [
+    {
+      "input": "",
+      "error": "EMPTY"
+    },
+    {
+      "input": "   ",
+      "error": "EMPTY"
+    },
+    {
+      "input": "0100123456a",
+      "error": "INVALID_CHARACTERS"
+    },
+    {
+      "input": "010+01234567",
+      "error": "INVALID_CHARACTERS"
+    },
+    {
+      "input": "0100123456",
+      "error": "INVALID_LENGTH"
+    },
+    {
+      "input": "010012345678",
+      "error": "INVALID_LENGTH"
+    },
+    {
+      "input": "+2010012345",
+      "error": "INVALID_LENGTH"
+    },
+    {
+      "input": "+20",
+      "error": "INVALID_LENGTH"
+    },
+    {
+      "input": "+44 7911 123456",
+      "error": "NOT_EGYPTIAN"
+    },
+    {
+      "input": "0044 7911 123456",
+      "error": "NOT_EGYPTIAN"
+    },
+    {
+      "input": "02 2345 6789",
+      "error": "NOT_MOBILE"
+    },
+    {
+      "input": "+20223456789",
+      "error": "NOT_MOBILE"
+    },
+    {
+      "input": "01301234567",
+      "error": "UNKNOWN_PREFIX"
+    },
+    {
+      "input": "01901234567",
+      "error": "UNKNOWN_PREFIX"
+    }
+  ]
+}

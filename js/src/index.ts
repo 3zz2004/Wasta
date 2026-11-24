@@ -1,0 +1,12 @@
+export { toArabicDigits, toWesternDigits } from "./digits.js";
+export { findGovernorate, getGovernorate, governorates } from "./governorates.js";
+export type { Governorate, GovernorateCode } from "./governorates.js";
+export { isValidNationalId, parseNationalId } from "./national-id.js";
+export type { NationalIdError, NationalIdInfo, NationalIdOptions } from "./national-id.js";
+export { normalizeArabic } from "./normalize.js";
+export type { NormalizeOptions } from "./normalize.js";
+export { isValidPhone, parsePhone } from "./phone.js";
+export type { MobileNumber, MobileOperator, PhoneError } from "./phone.js";
+export type { Result } from "./result.js";
+export { MAX_AMOUNT, TafqeetError, numberToArabicWords, tafqeet } from "./tafqeet.js";
+export type { TafqeetErrorCode, TafqeetOptions } from "./tafqeet.js";

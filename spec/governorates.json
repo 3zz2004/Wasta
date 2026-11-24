@@ -1,0 +1,122 @@
+{
+  "find": [
+    {
+      "input": "القاهرة",
+      "code": "01"
+    },
+    {
+      "input": "قاهره",
+      "code": "01"
+    },
+    {
+      "input": "cairo",
+      "code": "01"
+    },
+    {
+      "input": "  CAIRO ",
+      "code": "01"
+    },
+    {
+      "input": "اسكندرية",
+      "code": "02"
+    },
+    {
+      "input": "الاسكندريه",
+      "code": "02"
+    },
+    {
+      "input": "Alex",
+      "code": "02"
+    },
+    {
+      "input": "El Alexandria",
+      "code": "02"
+    },
+    {
+      "input": "بور سعيد",
+      "code": "03"
+    },
+    {
+      "input": "Port-Said",
+      "code": "03"
+    },
+    {
+      "input": "كفرالشيخ",
+      "code": "15"
+    },
+    {
+      "input": "محافظة كفر الشيخ",
+      "code": "15"
+    },
+    {
+      "input": "Kafr-El-Sheikh",
+      "code": "15"
+    },
+    {
+      "input": "kafrelsheikh",
+      "code": "15"
+    },
+    {
+      "input": "Kafr El Sheikh Governorate",
+      "code": "15"
+    },
+    {
+      "input": "Sharkia",
+      "code": "13"
+    },
+    {
+      "input": "الشرقيه",
+      "code": "13"
+    },
+    {
+      "input": "Fayoum",
+      "code": "23"
+    },
+    {
+      "input": "Assiut",
+      "code": "25"
+    },
+    {
+      "input": "اسيوط",
+      "code": "25"
+    },
+    {
+      "input": "الأقصر",
+      "code": "29"
+    },
+    {
+      "input": "اقصر",
+      "code": "29"
+    },
+    {
+      "input": "البحر الاحمر",
+      "code": "31"
+    },
+    {
+      "input": "Red Sea",
+      "code": "31"
+    },
+    {
+      "input": "مرسى مطروح",
+      "code": "33"
+    },
+    {
+      "input": "جنوب سيناء",
+      "code": "35"
+    },
+    {
+      "input": "south-sinai",
+      "code": "35"
+    },
+    {
+      "input": "محافظة كفرالشيخ",
+      "code": "15"
+    }
+  ],
+  "notFound": [
+    "",
+    "Dubai",
+    "سيناء",
+    "القاهرة الجديدة"
+  ]
+}

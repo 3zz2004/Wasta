@@ -1,0 +1,26 @@
+[
+  {
+    "prefix": "010",
+    "operator": "vodafone",
+    "nameEn": "Vodafone",
+    "nameAr": "فودافون"
+  },
+  {
+    "prefix": "011",
+    "operator": "etisalat",
+    "nameEn": "Etisalat",
+    "nameAr": "اتصالات"
+  },
+  {
+    "prefix": "012",
+    "operator": "orange",
+    "nameEn": "Orange",
+    "nameAr": "أورنج"
+  },
+  {
+    "prefix": "015",
+    "operator": "we",
+    "nameEn": "WE",
+    "nameAr": "وي"
+  }
+]
